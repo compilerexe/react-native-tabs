@@ -8,10 +8,9 @@ import {
 
 export default class Tabs extends Component {
 
-  // Initialize State
-  state = {
-    // First tab is active by default
-    activeTab: 0
+  constructor(props) {
+    super(props)
+    this.state = {activeTab: 0} // First tab is active by default
   }
 
   // Pull children out of props passed from App component
